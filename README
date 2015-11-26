@@ -1,4 +1,10 @@
-Versão 0.000001
+Version 0.1
 
-Como executar:
-	python -c "import vamcode_decoder; import example2"
+Compile vamcode to python
+vamcode-tool -c file.vam [-o file.py]
+
+Decompile python to vamcode
+vamcode-tool -d file.py [-o file.vam]
+
+Run vamcode file
+vamcode-tool -r file.vam
