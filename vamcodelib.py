@@ -109,20 +109,19 @@ class Decompiler(object):
             output = f.read()
 
             for key, code in PY_TO_VAM.items():
-                stmt = " "+key
+                stmt = " "+key+" "
                 if stmt in output:
-                    output = output.replace(stmt, " " + code)
-                stmt = "^"+key
+                    output = output.replace(stmt, " " + code + " ")
+                stmt = "^"+key+" "
                 if stmt in output:
-                    output = output.replace(stmt, "^" + code)
-                stmt = key + ":"
+                    output = output.replace(stmt, "^" + code + " ")
+                stmt = " " + key + ":"
                 if stmt in output:
-                    output = output.replace(stmt, code + ":")
-                stmt = key + "("
+                    output = output.replace(stmt, " "+code + ":")
+                stmt = " " + key + "("
                 if stmt in output:
-                    output = output.replace(stmt, code + "(")
-                stmt = key + " "
+                    output = output.replace(stmt, " " +code + "(")
+                stmt = "\n" + key
                 if stmt in output:
-                    output = output.replace(stmt, code + " ")
-
+                    output = output.replace(stmt, "\n" +code)
         return output
