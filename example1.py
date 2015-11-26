@@ -1,0 +1,3 @@
+# coding: vamcode
+
+👉 "Uma mensagem"

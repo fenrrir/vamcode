@@ -1,0 +1,4 @@
+Versão 0.000001
+
+Como executar:
+	python -c "import vamcode_decoder; import example2"
