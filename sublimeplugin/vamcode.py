@@ -1,8 +1,6 @@
 import sublime, sublime_plugin
 
-import os
-import sys
-import tempfile
+
 import vamcodelib
 
 
