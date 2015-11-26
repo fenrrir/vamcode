@@ -80,7 +80,7 @@ class Compiler(object):
             f.write(output)
 
         if not silent:
-            print "{} generate sucessful".format(self.output_filename)
+            print "{} generate successful".format(self.output_filename)
 
 
 
@@ -120,7 +120,7 @@ class Decompiler(object):
         with file(self.output_filename, "w") as f:
             f.write(output)
 
-        print "{} generate sucessful".format(self.output_filename)
+        print "{} generate successful".format(self.output_filename)
 
 
 def main():
