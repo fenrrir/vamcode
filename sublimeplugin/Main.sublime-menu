@@ -1,0 +1,18 @@
+[
+{
+    "id": "tools",
+    "children":
+    [
+        {
+            "id": "vamcode",
+            "caption" : "Vamcode tools",
+
+            "children" : [
+                { "command": "vamcode", "caption" : "Inserir comando vamcode"},
+                { "command": "vamcode_compile", "caption" : "Gerar código Python"},
+                { "command": "vamcode_decompile", "caption" : "Gerar código vamcode"},
+            ]
+        }
+    ]
+}
+]
